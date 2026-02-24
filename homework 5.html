@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+</head>
+<body>
+
+    <h2>User Registration Form</h2>
+    <form action="/submit_registration" method="post">
+        
+        <label>Username:</label><br>
+        <input type="text" name="username" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br><br>
+
+        <label>Confirm Password:</label><br>
+        <input type="password" name="confirm_password" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other<br><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date" name="dob"><br><br>
+
+        <label>Brief Description about Yourself:</label><br>
+        <textarea name="description" rows="4" cols="30"></textarea><br><br>
+
+        <label>No of Films Watched per Week:</label><br>
+        <input type="number" name="films_per_week" min="0"><br><br>
+
+        <label>Favorite Film Genres:</label><br>
+        <select name="genres" multiple>
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="horror">Horror</option>
+            <option value="sci-fi">Sci-Fi</option>
+        </select><br><small>(Hold Ctrl to select multiple)</small><br><br>
+
+        <input type="checkbox" name="terms" required>
+        <label>I accept the license terms and agreement</label><br><br>
+
+        <button type="submit">Sign Up</button>
+
+    </form>
+
+</body>
+</html>
